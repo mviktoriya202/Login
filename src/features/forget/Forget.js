@@ -23,7 +23,6 @@ export default function ForgetComponent() {
     data.redirect_url = 'http://localhost:3000/new-password'
 
     dispatch(resetPassword(data)).then(({payload})=>{
-      console.log(payload,'payload');
       if(payload?.error === 0){
         dispatch(
           triggerNotification({ type: 'success', message: 'Check your email' }),

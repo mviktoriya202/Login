@@ -64,8 +64,12 @@ export default function LoginComponent() {
     dispatch(
       checkAccessToken({
         access_id: accessToken,
-      }),
-    )
+      })
+    ).then(({payload})=>{
+      if(!payload){
+        dispatch(triggerNotification({ type: 'error', message: 'User is invalid' }))
+      }
+    })
   }
 
   const onGoogleFailure = data => {

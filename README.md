@@ -10,8 +10,8 @@ To set up and run the project locally, follow these steps:
 
 1. Clone the repository from the provided Git URL.
 2. Navigate to the project directory in your terminal.
-3. Run `npm install` to install all the necessary dependencies.
-4. Start the development server by running `npm start`.
+3. Run `yarn` to install all the necessary dependencies.
+4. Start the development server by running `yarn start`.
 5. Access the application in your web browser using the provided URL (usually `http://localhost:3000`).
 
 **3. Components Structure**
